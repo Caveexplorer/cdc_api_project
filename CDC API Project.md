@@ -1,0 +1,1 @@
+In this project we get experience using the CDC's Wonder API (https://wonder.cdc.gov/wonder/help/WONDER-API.html) to obtain cancer death data in the date range between 1999 and 2013. This data in particular was chosen to follow along with the example request and response given on their website ("1st Example Request").

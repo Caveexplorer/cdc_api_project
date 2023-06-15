@@ -1249,7 +1249,7 @@
 </missing>
 </dataset>
 <response>
-<request query-date="Jun 14, 2023 2:48:46 PM">
+<request query-date="Jun 14, 2023 8:55:05 PM">
 <variable-selections>
 	<variable code="D76.V1" from-finder="true">
 		<value code="1999" label="1999"/>

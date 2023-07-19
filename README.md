@@ -22,3 +22,9 @@ The resulting table consists of the following columns:
 - Year: the year in which the mortality measurements were taken.
 
 With the technical hurdles of data acquisition overcome, we performed our exploration and analaysis in a series of jupyter notebooks.
+
+### The Analysis
+
+In the cdc_eda.ipynb Jupyter notebook, we performed our analysis. There is visual and numeric exploration of data, with things like viewing the aggregated death rates of all races over time, viewing individual racial death rate over time, and racial death rates aggregated over the whole time period. After taking a cursory inspection of our data, we set out to answer the following question: Do the different races have significantly different death rates from cancer? Our strategy to answer this question was to run an ANOVA test on the different racial groups's death rates.  Unfortunately, we would not be able to answer this question as our samples were not able to meet two out of three ANOVA's criteria. The samples come from normally distributed populations, but they do not come from independent populations with equal variances. Despite this dead end, we view this project as a useful exercise in data acquistion via API usage, and the performance of various statistical tests. 
+
+![F-Test](f_test.png)

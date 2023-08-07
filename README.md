@@ -5,7 +5,7 @@ In this project we investigate cancer death data in the date range between 1999 
 ### File Contents
 The The document **cdc_wonder_api_requests.py** brings in the **req.xml** file and makes a request of the API per the structure of req.xml. The response is saved as **response.xml**. Responses are, of course, in xml format. The data is structured hierarchically: rows contain cells, which contain values. Some care is needed when parsing this into your language of choice. Year is contained right along with other values so that they don't get their own column if one is not careful. Additionally, every five rows contains a subtotal row. **xml_parser.py** does the work of parsing the response file. We intentionally discarded the subtotal rows to simplify the work of parsing, and pickled and saved the resulting dataframe as **my_df.pkl**
 
-![example_response](response_example.png)
+![example_response](images/response_example.png)
 
 ### The Data
 
@@ -27,4 +27,4 @@ With the technical hurdles of data acquisition overcome, we performed our explor
 
 In the cdc_eda.ipynb Jupyter notebook, we performed our analysis. There is visual and numeric exploration of data, with things like viewing the aggregated death rates of all races over time, viewing individual racial death rate over time, and racial death rates aggregated over the whole time period. After taking a cursory inspection of our data, we set out to answer the following question: Do the different races have significantly different death rates from cancer? Our strategy to answer this question was to run an ANOVA test on the different racial groups's death rates.  Unfortunately, we would not be able to answer this question as our samples were not able to meet two out of three ANOVA's criteria. The samples come from normally distributed populations, but they do not come from independent populations with equal variances. Despite this dead end, we view this project as a useful exercise in data acquistion via API usage, and the performance of various statistical tests. 
 
-![F-Test](f_test.png)
+![F-Test](images/f_test.png)
